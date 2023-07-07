@@ -1,3 +1,0 @@
-[console_scripts]
-move = like_a_rumba_robot.move:main
-
