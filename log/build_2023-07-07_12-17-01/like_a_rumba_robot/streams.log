@@ -1,0 +1,21 @@
+[0.885s] Invoking command in '/home/chris/Robosim/src/like_a_rumba_robot': PYTHONPATH=/home/chris/Robosim/build/like_a_rumba_robot/prefix_override:/home/chris/Robosim/install/like_a_rumba_robot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/like_a_rumba_robot build --build-base /home/chris/Robosim/build/like_a_rumba_robot/build install --record /home/chris/Robosim/build/like_a_rumba_robot/install.log --single-version-externally-managed
+[1.124s] running egg_info
+[1.124s] writing ../../build/like_a_rumba_robot/like_a_rumba_robot.egg-info/PKG-INFO
+[1.125s] writing dependency_links to ../../build/like_a_rumba_robot/like_a_rumba_robot.egg-info/dependency_links.txt
+[1.125s] writing entry points to ../../build/like_a_rumba_robot/like_a_rumba_robot.egg-info/entry_points.txt
+[1.125s] writing requirements to ../../build/like_a_rumba_robot/like_a_rumba_robot.egg-info/requires.txt
+[1.125s] writing top-level names to ../../build/like_a_rumba_robot/like_a_rumba_robot.egg-info/top_level.txt
+[1.156s] reading manifest file '../../build/like_a_rumba_robot/like_a_rumba_robot.egg-info/SOURCES.txt'
+[1.157s] writing manifest file '../../build/like_a_rumba_robot/like_a_rumba_robot.egg-info/SOURCES.txt'
+[1.157s] running build
+[1.157s] running build_py
+[1.157s] running install
+[1.158s] running install_lib
+[1.159s] running install_data
+[1.160s] running install_egg_info
+[1.162s] removing '/home/chris/Robosim/install/like_a_rumba_robot/lib/python3.8/site-packages/like_a_rumba_robot-0.0.0-py3.8.egg-info' (and everything under it)
+[1.162s] Copying ../../build/like_a_rumba_robot/like_a_rumba_robot.egg-info to /home/chris/Robosim/install/like_a_rumba_robot/lib/python3.8/site-packages/like_a_rumba_robot-0.0.0-py3.8.egg-info
+[1.162s] running install_scripts
+[1.178s] Installing move script to /home/chris/Robosim/install/like_a_rumba_robot/lib/like_a_rumba_robot
+[1.178s] writing list of installed files to '/home/chris/Robosim/build/like_a_rumba_robot/install.log'
+[1.204s] Invoked command in '/home/chris/Robosim/src/like_a_rumba_robot' returned '0': PYTHONPATH=/home/chris/Robosim/build/like_a_rumba_robot/prefix_override:/home/chris/Robosim/install/like_a_rumba_robot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/like_a_rumba_robot build --build-base /home/chris/Robosim/build/like_a_rumba_robot/build install --record /home/chris/Robosim/build/like_a_rumba_robot/install.log --single-version-externally-managed

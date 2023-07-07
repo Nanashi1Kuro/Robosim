@@ -1,0 +1,137 @@
+[0.038s] Invoking command in '/home/chris/Robosim/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chris/Robosim/install/like_a_rumba_robot:/opt/ros/galactic /home/chris/.local/bin/cmake /home/chris/Robosim/src/turtlebot3_simulations/turtlebot3_fake_node -DCMAKE_INSTALL_PREFIX=/home/chris/Robosim/install/turtlebot3_fake_node
+[0.121s] -- The C compiler identification is GNU 9.4.0
+[0.186s] -- The CXX compiler identification is GNU 9.4.0
+[0.196s] -- Detecting C compiler ABI info
+[0.256s] -- Detecting C compiler ABI info - done
+[0.270s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.270s] -- Detecting C compile features
+[0.271s] -- Detecting C compile features - done
+[0.275s] -- Detecting CXX compiler ABI info
+[0.349s] -- Detecting CXX compiler ABI info - done
+[0.364s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.364s] -- Detecting CXX compile features
+[0.365s] -- Detecting CXX compile features - done
+[0.368s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.397s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.397s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.497s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[0.536s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.544s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.625s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.670s] -- Found FastRTPS: /opt/ros/galactic/include  
+[0.767s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.879s] -- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)
+[0.977s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[1.055s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[1.059s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.083s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.084s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.148s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.148s] -- Looking for pthread_create in pthreads
+[1.195s] -- Looking for pthread_create in pthreads - not found
+[1.195s] -- Looking for pthread_create in pthread
+[1.257s] -- Looking for pthread_create in pthread - found
+[1.259s] -- Found Threads: TRUE  
+[1.448s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[1.531s] -- Found tf2: 0.17.5 (/opt/ros/galactic/share/tf2/cmake)
+[1.544s] -- Found tf2_msgs: 0.17.5 (/opt/ros/galactic/share/tf2_msgs/cmake)
+[1.826s] -- Found turtlebot3_msgs: 2.2.2 (/opt/ros/galactic/share/turtlebot3_msgs/cmake)
+[2.051s] -- Configuring done (2.0s)
+[2.066s] -- Generating done (0.0s)
+[2.068s] -- Build files have been written to: /home/chris/Robosim/build/turtlebot3_fake_node
+[2.084s] Invoked command in '/home/chris/Robosim/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chris/Robosim/install/like_a_rumba_robot:/opt/ros/galactic /home/chris/.local/bin/cmake /home/chris/Robosim/src/turtlebot3_simulations/turtlebot3_fake_node -DCMAKE_INSTALL_PREFIX=/home/chris/Robosim/install/turtlebot3_fake_node
+[2.087s] Invoking command in '/home/chris/Robosim/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chris/Robosim/install/like_a_rumba_robot:/opt/ros/galactic /home/chris/.local/bin/cmake --build /home/chris/Robosim/build/turtlebot3_fake_node -- -j8 -l8
+[2.134s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlebot3_fake_node.dir/src/turtlebot3_fake_node.cpp.o[0m
+[5.622s] [01m[K/home/chris/Robosim/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:[m[K In member function ‘[01m[Kvoid Turtlebot3Fake::init_parameters()[m[K’:
+[5.622s] [01m[K/home/chris/Robosim/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:75:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[5.623s]    75 |   this->declare_parameter("joint_states_frame"[01;35m[K)[m[K;
+[5.623s]       |                                               [01;35m[K^[m[K
+[5.623s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.623s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[5.623s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.623s]                  from [01m[K/home/chris/Robosim/src/turtlebot3_simulations/turtlebot3_fake_node/include/turtlebot3_fake_node/turtlebot3_fake_node.hpp:21[m[K,
+[5.625s]                  from [01m[K/home/chris/Robosim/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:17[m[K:
+[5.625s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.626s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[5.627s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.627s] [01m[K/home/chris/Robosim/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:76:39:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[5.627s]    76 |   this->declare_parameter("odom_frame"[01;35m[K)[m[K;
+[5.627s]       |                                       [01;35m[K^[m[K
+[5.627s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.628s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[5.628s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.628s]                  from [01m[K/home/chris/Robosim/src/turtlebot3_simulations/turtlebot3_fake_node/include/turtlebot3_fake_node/turtlebot3_fake_node.hpp:21[m[K,
+[5.628s]                  from [01m[K/home/chris/Robosim/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:17[m[K:
+[5.628s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.629s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[5.629s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.629s] [01m[K/home/chris/Robosim/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:77:39:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[5.629s]    77 |   this->declare_parameter("base_frame"[01;35m[K)[m[K;
+[5.629s]       |                                       [01;35m[K^[m[K
+[5.629s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.630s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[5.630s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.630s]                  from [01m[K/home/chris/Robosim/src/turtlebot3_simulations/turtlebot3_fake_node/include/turtlebot3_fake_node/turtlebot3_fake_node.hpp:21[m[K,
+[5.630s]                  from [01m[K/home/chris/Robosim/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:17[m[K:
+[5.630s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.630s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[5.631s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.631s] [01m[K/home/chris/Robosim/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:78:46:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[5.631s]    78 |   this->declare_parameter("wheels.separation"[01;35m[K)[m[K;
+[5.631s]       |                                              [01;35m[K^[m[K
+[5.631s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.631s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[5.632s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.632s]                  from [01m[K/home/chris/Robosim/src/turtlebot3_simulations/turtlebot3_fake_node/include/turtlebot3_fake_node/turtlebot3_fake_node.hpp:21[m[K,
+[5.632s]                  from [01m[K/home/chris/Robosim/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:17[m[K:
+[5.632s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.632s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[5.632s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.633s] [01m[K/home/chris/Robosim/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:79:42:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[5.633s]    79 |   this->declare_parameter("wheels.radius"[01;35m[K)[m[K;
+[5.633s]       |                                          [01;35m[K^[m[K
+[5.633s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.633s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[5.634s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.634s]                  from [01m[K/home/chris/Robosim/src/turtlebot3_simulations/turtlebot3_fake_node/include/turtlebot3_fake_node/turtlebot3_fake_node.hpp:21[m[K,
+[5.634s]                  from [01m[K/home/chris/Robosim/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:17[m[K:
+[5.634s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.634s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[5.635s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[18.337s] [100%] [32m[1mLinking CXX executable turtlebot3_fake_node[0m
+[18.772s] [100%] Built target turtlebot3_fake_node
+[18.780s] Invoked command in '/home/chris/Robosim/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chris/Robosim/install/like_a_rumba_robot:/opt/ros/galactic /home/chris/.local/bin/cmake --build /home/chris/Robosim/build/turtlebot3_fake_node -- -j8 -l8
+[18.864s] Invoking command in '/home/chris/Robosim/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chris/Robosim/install/like_a_rumba_robot:/opt/ros/galactic /home/chris/.local/bin/cmake --install /home/chris/Robosim/build/turtlebot3_fake_node
+[18.891s] -- Install configuration: ""
+[18.891s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/lib/turtlebot3_fake_node/turtlebot3_fake_node
+[18.894s] -- Set runtime path of "/home/chris/Robosim/install/turtlebot3_fake_node/lib/turtlebot3_fake_node/turtlebot3_fake_node" to ""
+[18.895s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch
+[18.895s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/rviz2.launch.py
+[18.895s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/turtlebot3_fake_node.launch.py
+[18.895s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param
+[18.895s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/burger.yaml
+[18.895s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle.yaml
+[18.896s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle_pi.yaml
+[18.896s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/rviz
+[18.896s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/rviz/model.rviz
+[18.896s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/include/
+[18.896s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/include//turtlebot3_fake_node
+[18.896s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/include//turtlebot3_fake_node/turtlebot3_fake_node.hpp
+[18.896s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/ament_index/resource_index/package_run_dependencies/turtlebot3_fake_node
+[18.896s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/ament_index/resource_index/parent_prefix_path/turtlebot3_fake_node
+[18.896s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/ament_prefix_path.sh
+[18.896s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/ament_prefix_path.dsv
+[18.896s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/path.sh
+[18.897s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/path.dsv
+[18.897s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.bash
+[18.897s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.sh
+[18.897s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.zsh
+[18.897s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.dsv
+[18.897s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.dsv
+[18.897s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/ament_index/resource_index/packages/turtlebot3_fake_node
+[18.897s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/ament_cmake_export_include_directories-extras.cmake
+[18.897s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/ament_cmake_export_dependencies-extras.cmake
+[18.898s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/turtlebot3_fake_nodeConfig.cmake
+[18.898s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/turtlebot3_fake_nodeConfig-version.cmake
+[18.898s] -- Installing: /home/chris/Robosim/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.xml
+[18.904s] Invoked command in '/home/chris/Robosim/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chris/Robosim/install/like_a_rumba_robot:/opt/ros/galactic /home/chris/.local/bin/cmake --install /home/chris/Robosim/build/turtlebot3_fake_node
