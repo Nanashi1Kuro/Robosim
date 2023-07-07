@@ -1,0 +1,8 @@
+<launch>
+  <arg name="use_sim_time" default="True"/>
+  <arg name="model" default="burger" />
+  <include file="$(find-pkg-share turtlebot3_gazebo)/launch/turtlebot3_world.launch.py"/>
+  <include file="$(find-pkg-share turtlebot3_cartographer)/launch/cartographer.launch.py"/>
+  <include file="$(find-pkg-share turtlebot3_navigation2)/launch/navigation2.launch.py"/>
+  <node pkg="like_a_rumba_robot" exec="move" name="move_controller"/>
+</launch>
